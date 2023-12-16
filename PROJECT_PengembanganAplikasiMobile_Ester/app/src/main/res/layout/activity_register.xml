@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/icon5"
+    tools:context=".RegisterActivity">
+
+    <!--    KTP Number form input text-->
+    <EditText
+        android:id="@+id/nik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:background="#ffac85"
+        android:gravity="center"
+        android:hint="Masukkan NIK Anda"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:padding="24dp"
+        tools:text="Masukkan NIK Anda" />
+
+    <!--    full name form input text-->
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:background="#ffac85"
+        android:gravity="center"
+        android:hint="Masukkan Nama Lengkap"
+        android:inputType="text"
+        android:padding="24dp"
+        tools:text="Masukkan Nama Lengkap" />
+
+<!--    phone number form input text-->
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:background="#ffac85"
+        android:gravity="center"
+        android:hint="Masukkan Nomor Telepon"
+        android:inputType="text"
+        android:padding="24dp"
+        tools:text="Masukkan Nomor Telepon" />
+
+<!--    username(email) form input text-->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:background="#ffac85"
+        android:gravity="center"
+        android:hint="Masukkan Email Anda"
+        android:inputType="textEmailAddress"
+        android:padding="24dp" />
+
+<!--    password form input text-->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:background="#ffac85"
+        android:gravity="center"
+        android:hint="Masukann Password Anda"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:padding="24dp" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffac85"
+        android:minWidth="250dp"
+        android:onClick="register"
+        android:text="Register"
+        android:textColor="@color/black"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/sp_rectangle_root" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#ffac85"
+        android:minWidth="250dp"
+        android:onClick="login"
+        android:text="Login"
+        android:textColor="@color/black"
+        app:cornerRadius="20dp" />
+</LinearLayout>
+
